@@ -1,0 +1,25 @@
+@mixin setHeader($color) {
+  //to be used for headers
+  color: $color;
+  font-family: "Space Grotesk";
+  padding: 20px;
+}
+
+@mixin setCTAs($bg-color, $font-color) {
+  //to be used for buttons
+  background: $bg-color;
+  color: $font-color;
+  border-radius: 12px;
+  padding: 14px 24px;
+}
+
+@mixin setSpans($bg-color, $font-color) {
+  //to be used for the difficulty tags
+  background: $bg-color;
+  color: $font-color;
+  border-radius: 9999px;
+  padding: 10px 2px;
+}
+
+@mixin setCards() {
+}
