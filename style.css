@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav div {
+  background: #083d77;
+  color: white;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+nav .icon {
+  display: inline-flex;
+}
+nav .icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  background: #ebebd3;
+}
+main .header-1 {
+  color: #083d77;
+  font-family: "Space Grotesk";
+}
+main .header-2 {
+  color: #ee964b;
+  font-family: "Space Grotesk";
+}
+main p {
+  color: #5a6e8a;
+  font-family: "Inter";
+}
+main .take-quiz {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #083d77;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+main .take-quiz svg {
+  width: 18px;
+  height: 18px;
+}
+main .quiz-list {
+  color: #083d77;
+  font-weight: 600;
+}
+main .dashboard {
+  background: #ebebd3;
+}
+main .dashboard .title {
+  font-family: "Space Grotesk";
+}/*# sourceMappingURL=style.css.map */

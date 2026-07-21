@@ -1,0 +1,75 @@
+$primary-color: #083d77;
+$background-color: #ebebd3;
+$accent-yellow: #f4d35e;
+$border-color: rgba(8, 61, 119, 0.12);
+$surface-muted: #d9d9c2;
+$text-muted: #5a6e8a;
+$surface: #ffffff;
+$accent-danger: #f95738;
+$accent-orange: #ee964b;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  div {
+    background: $primary-color;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .icon {
+    display: inline-flex;
+
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+main {
+  display: flex;
+  flex-direction: column;
+  background: $background-color;
+  .header-1 {
+    color: $primary-color;
+    font-family: "Space Grotesk";
+  }
+  .header-2 {
+    color: $accent-orange;
+    font-family: "Space Grotesk";
+  }
+  p {
+    color: $text-muted;
+    font-family: "Inter";
+  }
+  .take-quiz {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: $primary-color;
+    color: white;
+    border: none;
+    cursor: pointer;
+    svg {
+      width: 18px;
+      height: 18px;
+    }
+  }
+  .quiz-list {
+    color: $primary-color;
+    font-weight: 600;
+  }
+  .dashboard {
+    background: $background-color;
+    .title {
+      font-family:"Space Grotesk";
+    }
+  }
+}
