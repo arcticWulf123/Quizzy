@@ -8,6 +8,29 @@ $surface: #ffffff;
 $accent-danger: #f95738;
 $accent-orange: #ee964b;
 
+@mixin setHeader($color) {
+  //to be used for headers
+  color: $color;
+  font-family: "Space Grotesk";
+  padding: 20px;
+}
+
+@mixin setButtons ($bg-color, $font-color) {
+  //to be used for buttons
+  border-radius: 12px;
+  padding: 20px;
+}
+
+@mixin setSpans ($bg-color, $font-color) {
+  //to be used for the difficulty tags
+  border-radius: 12px;
+  padding: 15px;
+}
+
+@mixin setCards () {
+
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -37,6 +60,7 @@ main {
   display: flex;
   flex-direction: column;
   background: $background-color;
+
   .header-1 {
     color: $primary-color;
     font-family: "Space Grotesk";
@@ -69,7 +93,7 @@ main {
   .dashboard {
     background: $background-color;
     .title {
-      font-family:"Space Grotesk";
+      font-family: "Space Grotesk";
     }
   }
 }
