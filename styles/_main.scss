@@ -3,8 +3,12 @@ main {
   flex-direction: column;
   background: $background-color;
 
+  .hero {
+    margin-bottom: 16px;
+  }
   .header-1 {
     @include setHeader($primary-color);
+    margin-bottom: -40px;
   }
   .header-2 {
     @include setHeader($accent-orange);
@@ -12,11 +16,21 @@ main {
   p {
     color: $text-muted;
     font-family: "Inter";
+    padding: 0 20px;
+    margin-bottom: 20px;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: fit-content;
+    margin: 0 auto;
   }
   .take-quiz {
     @include setCTAs($primary-color, white);
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 6px;
     border: none;
     cursor: pointer;
@@ -31,15 +45,17 @@ main {
   }
   .dashboard {
     background: $background-color;
+    padding: 20px;
     .title {
       font-family: "Space Grotesk";
     }
   }
 
   .create-quiz {
-    @include setCTAs($primary-color, white);
+    @include setCTAs($accent-yellow, $primary-color);
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 6px;
     border: none;
     cursor: pointer;

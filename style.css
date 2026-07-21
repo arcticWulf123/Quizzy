@@ -25,24 +25,43 @@ main {
   flex-direction: column;
   background: #ebebd3;
 }
+main .hero {
+  margin-bottom: 16px;
+}
 main .header-1 {
   color: #083d77;
   font-family: "Space Grotesk";
+  padding: 20px;
+  margin-bottom: -40px;
 }
 main .header-2 {
   color: #ee964b;
   font-family: "Space Grotesk";
+  padding: 20px;
 }
 main p {
   color: #5a6e8a;
   font-family: "Inter";
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+main .buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
 }
 main .take-quiz {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
   background: #083d77;
   color: white;
+  border-radius: 12px;
+  padding: 14px 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
   border: none;
   cursor: pointer;
 }
@@ -56,7 +75,24 @@ main .quiz-list {
 }
 main .dashboard {
   background: #ebebd3;
+  padding: 20px;
 }
 main .dashboard .title {
   font-family: "Space Grotesk";
+}
+main .create-quiz {
+  background: #f4d35e;
+  color: #083d77;
+  border-radius: 12px;
+  padding: 14px 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border: none;
+  cursor: pointer;
+}
+main .create-quiz svg {
+  width: 18px;
+  height: 18px;
 }/*# sourceMappingURL=style.css.map */
