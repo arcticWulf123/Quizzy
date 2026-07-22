@@ -91,8 +91,6 @@ main .quiz-card:hover {
 }
 main .quiz-card .pill {
   align-self: flex-start;
-  background: #f4d35e;
-  color: #083d77;
   font-family: "DM Mono", monospace;
   font-size: 0.75rem;
   font-weight: 500;
@@ -100,6 +98,18 @@ main .quiz-card .pill {
   border-radius: 999px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+}
+main .quiz-card .pill.easy {
+  background: #f4d35e;
+  color: #083d77;
+}
+main .quiz-card .pill.medium {
+  background: #ee964b;
+  color: #083d77;
+}
+main .quiz-card .pill.hard {
+  background: #f95738;
+  color: #ffffff;
 }
 main .quiz-card .quiz-title {
   color: #083d77;

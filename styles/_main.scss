@@ -62,8 +62,6 @@ main {
 
     .pill {
       align-self: flex-start;
-      background: $accent-yellow;
-      color: $primary-color;
       font-family: "DM Mono", monospace;
       font-size: 0.75rem;
       font-weight: 500;
@@ -71,6 +69,19 @@ main {
       border-radius: 999px;
       text-transform: uppercase;
       letter-spacing: 0.5px;
+
+      &.easy {
+        background: $accent-yellow;
+        color: $primary-color;
+      }
+      &.medium {
+        background: $accent-orange;
+        color: $primary-color;
+      }
+      &.hard {
+        background: $accent-danger;
+        color: $surface;
+      }
     }
 
     .quiz-title {
