@@ -9,7 +9,21 @@ async function parseJson() {
   if (!response.ok) throw new Error(`HTTP ${response.status}`);
   const data = await response.json();
   quizzes = data;
-  console.log(quizzes.length);
+  console.log(quizzes);
 }
 
-parseJson();
+parseJson().then(renderQuizCards);
+
+function renderQuizCards() {
+  const quizList = document.querySelector(".quiz-list");
+  const cards = quizzes.map((quiz) => {
+    return `
+      <div class="quiz-card">
+        <span class="pill">${quiz.category}</span>
+        <h3 class="quiz-title">${quiz.title}</h3>
+        <p class="quiz-meta">${quiz.amount} questions</p>
+      </div>
+    `;
+  });
+  quizList.innerHTML += cards.join("");
+}

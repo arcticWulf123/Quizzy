@@ -72,6 +72,44 @@ main .take-quiz svg {
 main .quiz-list {
   color: #083d77;
   font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+main .quiz-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+main .quiz-card:hover {
+  transform: translateY(-2px);
+}
+main .quiz-card .pill {
+  align-self: flex-start;
+  background: #f4d35e;
+  color: #083d77;
+  font-family: "DM Mono", monospace;
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 4px 12px;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+main .quiz-card .quiz-title {
+  color: #083d77;
+  font-family: "Space Grotesk";
+  font-size: 1.125rem;
+}
+main .quiz-card .quiz-meta {
+  color: #5a6e8a;
+  font-family: "Inter";
+  font-size: 0.875rem;
 }
 main .dashboard {
   background: #ebebd3;
