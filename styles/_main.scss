@@ -88,12 +88,15 @@ main {
       color: $primary-color;
       font-family: "Space Grotesk";
       font-size: 1.125rem;
+      margin: 0;
     }
 
     .quiz-meta {
       color: $text-muted;
       font-family: "Inter";
       font-size: 0.875rem;
+      margin: 0;
+      padding: 0;
     }
   }
   .dashboard {

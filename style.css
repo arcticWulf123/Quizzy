@@ -115,11 +115,14 @@ main .quiz-card .quiz-title {
   color: #083d77;
   font-family: "Space Grotesk";
   font-size: 1.125rem;
+  margin: 0;
 }
 main .quiz-card .quiz-meta {
   color: #5a6e8a;
   font-family: "Inter";
   font-size: 0.875rem;
+  margin: 0;
+  padding: 0;
 }
 main .dashboard {
   background: #ebebd3;
