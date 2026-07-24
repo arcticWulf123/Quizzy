@@ -1,7 +1,6 @@
-const takeAQuiz = document.getElementById("take-quiz");
+const takeAQuiz = document.querySelector(".take-quiz");
 const createAQuiz = document.getElementById("create-quiz");
 const quizDashboard = document.querySelector(".dashboard");
-
 let quizzes = [];
 
 async function parseJson() {
@@ -28,3 +27,8 @@ function renderQuizCards() {
   });
   quizList.innerHTML += cards.join("");
 }
+
+takeAQuiz.addEventListener("click", ()=>{
+  window.location.href = "quiz.html";
+})
+
