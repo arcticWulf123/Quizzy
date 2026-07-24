@@ -82,6 +82,10 @@ main {
         background: $accent-danger;
         color: $surface;
       }
+      &.\?\?\? {
+        background: #000000;
+        color: #ffffff;
+      }
     }
 
     .quiz-title {
