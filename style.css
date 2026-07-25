@@ -111,6 +111,11 @@ main .quiz-card .pill.hard {
   background: #f95738;
   color: #ffffff;
 }
+main .quiz-card .pill.unknown {
+  background: #000000;
+  color: #ffffff;
+  font-family: "Space Grotesk";
+}
 main .quiz-card .quiz-title {
   color: #083d77;
   font-family: "Space Grotesk";

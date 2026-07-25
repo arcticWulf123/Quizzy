@@ -82,7 +82,11 @@ main {
         background: $accent-danger;
         color: $surface;
       }
-      
+      &.unknown {
+        background: #000000;
+        color: #ffffff;
+        font-family: "Space Grotesk";
+      }
     }
 
     .quiz-title {

@@ -16,7 +16,7 @@ parseJson().then(renderQuizCards);
 function renderQuizCards() {
   const quizList = document.querySelector(".quiz-list");
   const cards = quizzes.map((quiz) => {
-    const difficulty = quiz.category.toLowerCase();
+    const difficulty = quiz.category.toLowerCase().replace(/\?\?\?/g, "unknown");
     return `
       <div class="quiz-card">
         <span class="pill ${difficulty}">${quiz.category}</span>
