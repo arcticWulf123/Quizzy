@@ -35,7 +35,8 @@ function renderQuizCards() {
   });
 }
 
-takeAQuiz.addEventListener("click", ()=>{
-  window.location.href = "quiz.html";
-})
+takeAQuiz.addEventListener("click", () => {
+  const randomIndex = Math.floor(Math.random() * quizzes.length);
+  window.location.href = `quiz.html?id=${randomIndex}`;
+});
 
