@@ -15,10 +15,10 @@ parseJson().then(renderQuizCards);
 
 function renderQuizCards() {
   const quizList = document.querySelector(".quiz-list");
-  const cards = quizzes.map((quiz) => {
+  const cards = quizzes.map((quiz, index) => {
     const difficulty = quiz.category.toLowerCase().replace(/\?\?\?/g, "unknown");
     return `
-      <div class="quiz-card">
+      <div class="quiz-card" data-index="${index}">
         <span class="pill ${difficulty}">${quiz.category}</span>
         <h3 class="quiz-title">${quiz.title}</h3>
         <p class="quiz-meta">${quiz.amount} questions</p>
@@ -26,6 +26,13 @@ function renderQuizCards() {
     `;
   });
   quizList.innerHTML += cards.join("");
+
+  document.querySelectorAll(".quiz-card").forEach((card) => {
+    card.addEventListener("click", () => {
+      const index = card.dataset.index;
+      window.location.href = `quiz.html?id=${index}`;
+    });
+  });
 }
 
 takeAQuiz.addEventListener("click", ()=>{

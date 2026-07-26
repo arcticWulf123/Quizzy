@@ -151,4 +151,87 @@ main .create-quiz {
 main .create-quiz svg {
   width: 18px;
   height: 18px;
+}
+
+.progress-container {
+  padding: 20px;
+  background: #ebebd3;
+}
+.progress-container > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.quiz-number {
+  font-family: "Space Grotesk";
+  font-weight: 600;
+  color: #083d77;
+  font-size: 0.875rem;
+}
+
+.progress-percentage {
+  font-family: "DM Mono", monospace;
+  color: #5a6e8a;
+  font-size: 0.875rem;
+}
+
+.progress-bar {
+  height: 6px;
+  background: #ee964b;
+  border-radius: 3px;
+  width: 0%;
+  transition: width 0.3s ease;
+}
+
+.question {
+  font-family: "Space Grotesk";
+  color: #083d77;
+  font-size: 1.25rem;
+  padding: 20px;
+}
+
+.choices {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0 20px;
+}
+
+.choice {
+  background: #ffffff;
+  border: 2px solid rgba(8, 61, 119, 0.12);
+  border-radius: 12px;
+  padding: 16px 20px;
+  font-family: "Inter";
+  font-size: 1rem;
+  color: #083d77;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  text-align: left;
+}
+.choice:hover:not(:disabled) {
+  border-color: #083d77;
+}
+.choice.correct {
+  background: #2ecc71;
+  border-color: #2ecc71;
+  color: white;
+}
+.choice.wrong {
+  background: #f95738;
+  border-color: #f95738;
+  color: white;
+}
+
+.back-btn {
+  background: #083d77;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 14px 24px;
+  font-family: "Space Grotesk";
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 20px;
 }/*# sourceMappingURL=style.css.map */
