@@ -7,6 +7,7 @@
 // Correct feedback .. .choice.correct (line ~192) — change #2ecc71
 // Wrong feedback .... .choice.wrong (line ~198) — change $accent-danger
 // Progress bar ...... .progress-bar — change $accent-orange for fill color
+// Desktop layout .... @media (min-width: 768px) inside main {} — CTAs row, 2x2 grid
 // ============================================================
 
 main {
@@ -36,6 +37,7 @@ main {
     gap: 12px;
     width: fit-content;
     margin: 0 auto;
+    margin-bottom: 32px;
   }
   .take-quiz {
     @include setCTAs($primary-color, white);
@@ -45,9 +47,16 @@ main {
     gap: 6px;
     border: none;
     cursor: pointer;
+    font-weight: 700;
     svg {
       width: 18px;
       height: 18px;
+
+      path {
+        fill: none;
+        stroke: currentColor;
+        stroke-width: 2;
+      }
     }
   }
   .quiz-list {
@@ -56,6 +65,10 @@ main {
     display: flex;
     flex-direction: column;
     gap: 16px;
+
+    .title {
+      margin-bottom: 8px;
+    }
   }
   .quiz-card {
     background: $surface;
@@ -118,6 +131,7 @@ main {
   .dashboard {
     background: $background-color;
     padding: 20px;
+    margin-top: 32px;
     .title {
       font-family: "Space Grotesk";
     }
@@ -131,9 +145,54 @@ main {
     gap: 6px;
     border: none;
     cursor: pointer;
+    font-weight: 700;
     svg {
       width: 18px;
       height: 18px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    .hero {
+      margin-bottom: 16px;
+    }
+
+    .header-1,
+    .header-2 {
+      padding-left: 0;
+    }
+
+    p {
+      padding-left: 0;
+    }
+
+    .buttons {
+      flex-direction: row;
+      width: 100%;
+      margin: 0;
+    }
+
+    .take-quiz,
+    .create-quiz {
+      flex: 1;
+    }
+
+    .quiz-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+
+      .title {
+        grid-column: 1 / -1;
+      }
+    }
+
+    .dashboard {
+      padding: 0;
+      margin-top: 32px;
     }
   }
 }

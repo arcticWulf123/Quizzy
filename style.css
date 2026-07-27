@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background: #ebebd3;
+}
+
 nav div {
   background: #083d77;
   color: white;
@@ -51,6 +55,7 @@ main .buttons {
   gap: 12px;
   width: fit-content;
   margin: 0 auto;
+  margin-bottom: 32px;
 }
 main .take-quiz {
   background: #083d77;
@@ -63,10 +68,16 @@ main .take-quiz {
   gap: 6px;
   border: none;
   cursor: pointer;
+  font-weight: 700;
 }
 main .take-quiz svg {
   width: 18px;
   height: 18px;
+}
+main .take-quiz svg path {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
 }
 main .quiz-list {
   color: #083d77;
@@ -74,6 +85,9 @@ main .quiz-list {
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+main .quiz-list .title {
+  margin-bottom: 8px;
 }
 main .quiz-card {
   background: #ffffff;
@@ -131,6 +145,7 @@ main .quiz-card .quiz-meta {
 main .dashboard {
   background: #ebebd3;
   padding: 20px;
+  margin-top: 32px;
 }
 main .dashboard .title {
   font-family: "Space Grotesk";
@@ -146,10 +161,48 @@ main .create-quiz {
   gap: 6px;
   border: none;
   cursor: pointer;
+  font-weight: 700;
 }
 main .create-quiz svg {
   width: 18px;
   height: 18px;
+}
+@media (min-width: 768px) {
+  main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  main .hero {
+    margin-bottom: 16px;
+  }
+  main .header-1,
+  main .header-2 {
+    padding-left: 0;
+  }
+  main p {
+    padding-left: 0;
+  }
+  main .buttons {
+    flex-direction: row;
+    width: 100%;
+    margin: 0;
+  }
+  main .take-quiz,
+  main .create-quiz {
+    flex: 1;
+  }
+  main .quiz-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  main .quiz-list .title {
+    grid-column: 1/-1;
+  }
+  main .dashboard {
+    padding: 0;
+    margin-top: 32px;
+  }
 }
 
 .progress-container {
