@@ -1,3 +1,13 @@
+// ============================================================
+// QUIZZY — HOME PAGE (script.js)
+// ============================================================
+// Data source ...... fetches ../data/data.json (array of quiz objects)
+// Card rendering ... renderQuizCards() builds .quiz-card divs from the array
+// Difficulty class .. quiz.category is lowercased; "???" maps to "unknown"
+// Card click ....... navigates to quiz.html?id=<index>
+// Take Quiz btn .... picks a random quiz index and navigates to quiz.html?id=
+// ============================================================
+
 const takeAQuiz = document.querySelector(".take-quiz");
 const createAQuiz = document.getElementById("create-quiz");
 const quizDashboard = document.querySelector(".dashboard");

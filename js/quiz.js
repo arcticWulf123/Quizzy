@@ -1,3 +1,13 @@
+// ============================================================
+// QUIZZY — QUIZ PAGE (quiz.js)
+// ============================================================
+// Flow ............. loadQuiz() → renderQuestion() → handleAnswer() → showResults()
+// Data source ...... fetches data/data.json, selects quiz by ?id= URL param
+// Feedback delay ... setTimeout in handleAnswer() — change 1500 (ms) to adjust
+// Correct/wrong .... .correct / .wrong CSS classes added to choice buttons
+// Results .......... score shown at end; "Back to Quizzes" btn added dynamically
+// ============================================================
+
 const quizNumber = document.querySelector(".quiz-number");
 const progressPercentage = document.querySelector(".progress-percentage");
 const progressBar = document.querySelector(".progress-bar");

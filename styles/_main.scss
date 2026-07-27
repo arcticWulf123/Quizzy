@@ -1,3 +1,14 @@
+// ============================================================
+// QUIZZY — SCSS GUIDE
+// ============================================================
+// Colors ........... edit _variables.scss ($primary-color, $accent-*, etc.)
+// Fonts ............ "Space Grotesk" (headings), "Inter" (body), "DM Mono" (pills)
+// Difficulty pills .. add/modify &.easy, &.medium, &.hard, &.unknown inside .pill
+// Correct feedback .. .choice.correct (line ~192) — change #2ecc71
+// Wrong feedback .... .choice.wrong (line ~198) — change $accent-danger
+// Progress bar ...... .progress-bar — change $accent-orange for fill color
+// ============================================================
+
 main {
   display: flex;
   flex-direction: column;
